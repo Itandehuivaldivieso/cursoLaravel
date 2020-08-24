@@ -20,6 +20,10 @@ Route::get('/test', function () {
 Route::get('/hola/{nombre?}', function ($nombre ="juan") {
     return "Hola mundo $nombre <a href='".route("nosotros")."'>nosotros</a> ";
 });
-Route::get('/nosotros', function () {
-    return "<h1> Toda la información sobre sonostro333s</h1> ";
+Route::get('/nosotros-en-la-web', function () {
+    return "<h1> Toda la información sobre sonostros</h1> ";
 })->name("nosotros");
+
+Route::get('home', function () {
+    return view("home");
+})->name("home");
