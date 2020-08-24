@@ -21,5 +21,5 @@ Route::get('/hola/{nombre?}', function ($nombre ="juan") {
     return "Hola mundo $nombre <a href='".route("nosotros")."'>nosotros</a> ";
 });
 Route::get('/nosotros', function () {
-    return "<h1> Toda la información sobre sonostros</h1> ";
+    return "<h1> Toda la información sobre sonostro33s</h1> ";
 })->name("nosotros");
